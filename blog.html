@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/61d8c7e4c7.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-[#F4F7FF] pb-4">
+    <header class="max-w-7xl mx-auto py-3">
+        <nav class="bg-white flex justify-between items-center px-4 py-2 rounded-2xl">
+            <!-- left part -->
+            <div class="flex gap-2 items-center justify-center">
+                <img class="w-8" src="assets/logo.png" alt="image of the logo">
+                <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1>
+            </div>
+            <!-- right part -->
+            <div>
+                <button class="text-white px-2 py-2 bg-blue-700 rounded-lg">Back to Desk
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+    <h3 class="text-xl font-bold text-center">Blogs</h3>
+
+    <!-- q1 card -->
+    <div class="bg-white rounded-lg max-w-7xl mx-auto mt-4">
+        <!-- question part -->
+        <div class="px-3 py-3">
+            <h4 class="font-bold text-lg">Question-1: What are the different ways to select an element in the DOM?</h4>
+        </div>
+        <!-- dashed line -->
+        <div class="border-b-2 border-dashed"></div>
+        <!-- answer part -->
+        <div class="px-3 py-3">
+            <p class="w-9/12">The ways to select an element in the DOM are
+                getElementById,getElementsByClassName,getElementsByTagName,querySelector,
+                querySelectorAll
+            </p>
+        </div>
+
+    </div>
+    <!-- q2 card -->
+    <div class="bg-white rounded-lg max-w-7xl mx-auto mt-2 mb-2">
+        <!-- question part -->
+        <div class="px-3 py-3">
+            <h4 class="font-bold text-lg">Question-2: What is the difference between innerHTML, innerText, and
+                textContent?</h4>
+        </div>
+        <!-- dashed line -->
+        <div class="border-b-2 border-dashed"></div>
+        <!-- answer part -->
+        <div class="px-3 py-3">
+            <p class="w-9/12">innerHTML gets or sets the HTML content inside an element, innerText
+                gets or sets the visible text and textContent gets or
+                sets all text inside an element (including hidden text)
+            </p>
+        </div>
+
+    </div>
+    <!-- q3 card -->
+    <div class="bg-white rounded-lg max-w-7xl mx-auto mt-2 mb-2">
+        <!-- question part -->
+        <div class="px-3 py-3">
+            <h4 class="font-bold text-lg">Question-3: What is event delegation in the DOM?</h4>
+        </div>
+        <!-- dashed line -->
+        <div class="border-b-2 border-dashed"></div>
+        <!-- answer part -->
+        <div class="px-3 py-3">
+            <p class="w-9/12">Event delegation is a technique in the DOM where a single parent element handles events
+                for its child elements, using event bubbling to capture events that originate from descendants.
+            </p>
+        </div>
+
+    </div>
+    <!-- q4 card -->
+    <div class="bg-white rounded-lg max-w-7xl mx-auto mt-2 mb-2">
+        <!-- question part -->
+        <div class="px-3 py-3">
+            <h4 class="font-bold text-lg">Question-4: What is event bubbling in the DOM?</h4>
+        </div>
+        <!-- dashed line -->
+        <div class="border-b-2 border-dashed"></div>
+        <!-- answer part -->
+        <div class="px-3 py-3">
+            <p class="w-9/12">Event bubbling is when an event starts on the element clicked, and then it
+                bubbles upward to all its parent elements.
+            </p>
+        </div>
+
+    </div>
+    <!-- q5 card -->
+    <div class="bg-white rounded-lg max-w-7xl mx-auto mt-2 mb-2">
+        <!-- question part -->
+        <div class="px-3 py-3">
+            <h4 class="font-bold text-lg">Question-5: How do you create, add, and remove elements using JavaScript?</h4>
+        </div>
+        <!-- dashed line -->
+        <div class="border-b-2 border-dashed"></div>
+        <!-- answer part -->
+        <div class="px-3 py-3">
+            <div class="w-9/12">
+                <p class="font-semibold">Creating an element:</p>
+                const newElement = document.createElement('p');<br>
+                newElement.textContent = 'DevBoard!';
+                <br class="mb-2">
+                <p class="font-semibold">Adding an element:</p>
+                document.body.appendChild(newElement);
+                <br class="mb-2">
+                <p class="font-semibold">Removing an element:</p>
+                document.body.removeChild(newElement);
+            </div>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
