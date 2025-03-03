@@ -10,24 +10,25 @@
     <script src="https://kit.fontawesome.com/61d8c7e4c7.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-[#F4F7FF] pb-16">
+<body class="bg-[#F4F7FF] pb-4 md:pb-16">
     <header class="max-w-7xl mx-auto py-3">
         <!-- navbar section -->
         <nav class="bg-white flex justify-between items-center px-4 py-2 rounded-2xl">
             <!-- left part -->
             <div class="flex gap-2 items-center justify-center">
-                <img class="w-8" src="assets/logo.png" alt="image of the logo">
-                <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1>
+                <img class="w-4 md:w-8" src="assets/logo.png" alt="image of the logo">
+                <h1 class="text-md md:text-3xl">Dev<span class="font-bold">Board</span></h1>
             </div>
 
             <!-- right part -->
             <div class="flex gap-4">
                 <!-- first part -->
-                <div class="bg-[#F4F7FF] rounded-full py-3 px-3 flex gap-4 justify-center items-center">
+                <div
+                    class="bg-[#F4F7FF] rounded-lg md:rounded-full h-2/3 mt-2 md:mt-0 md:h-full px-3 py-2 md:py-3 md:px-3 flex gap-4 justify-center items-center">
                     <div>
-                        <img class="w-8 h-8" src="assets/checkbox.png" alt="image of checkbox">
+                        <img class="w-4 h-4 md:w-8 md:h-8" src="assets/checkbox.png" alt="image of checkbox">
                     </div>
-                    <h1 class="text-3xl font-bold" id="completed-task">23</h1>
+                    <h1 class="text-md md:text-3xl font-bold" id="completed-task">23</h1>
                 </div>
                 <!-- second part -->
                 <div class="rounded-full bg-slate-100" id="theme-btn">
@@ -39,11 +40,11 @@
     </header>
 
     <section class="max-w-7xl mx-auto">
-        <div class="flex gap-3 ">
+        <div class="flex flex-col md:flex-row gap-3">
             <!-- left part -->
-            <div class="bg-white rounded-xl w-9/12">
+            <div class="bg-white rounded-xl md:w-9/12">
                 <!-- upper part -->
-                <div class="px-3 py-3 flex justify-between gap-3  ">
+                <div class="px-3 py-3 flex flex-col md:flex-row justify-between gap-3  ">
                     <!-- heading -->
                     <!-- first part -->
                     <div class="bg-[#F4F7FF] flex gap-4 items-center justify-center rounded-xl px-3 py-3">
@@ -82,11 +83,11 @@
                 </div>
 
                 <!-- bottom part -->
-                <div class="bg-white grid grid-cols-3 gap-4 px-3 py-3 mt-8 rounded-xl">
+                <div class="bg-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-3 py-3 mt-8 rounded-xl">
                     <!-- cards -->
                     <!-- card-1 -->
                     <div class="bg-[#F4F7FF] px-3 py-3 rounded-xl space-y-3">
-                        <div class=" bg-white py-2 px-2 w-2/5 rounded-xl">
+                        <div class=" bg-white py-2 px-2 w-3/5 md:w-2/5 rounded-xl">
                             <p id="shopease">ShopEase</p>
                         </div>
                         <h1 class="text-xl font-semibold" id="title1">Fix Mobile Button Issue </h1>
@@ -114,7 +115,7 @@
                     </div>
                     <!-- card-2 -->
                     <div class="bg-[#F4F7FF] px-3 py-3 rounded-xl space-y-3">
-                        <div class=" bg-white py-2 px-2 w-2/5 rounded-xl">
+                        <div class=" bg-white py-2 px-2 w-3/5 md:w-2/5 rounded-xl">
                             <p id="cloudsync">CloudSync</p>
                         </div>
                         <h1 class="text-xl font-semibold" id="title2">Add Dark Mode</h1>
@@ -140,7 +141,7 @@
                     </div>
                     <!-- card-3 -->
                     <div class="bg-[#F4F7FF] px-3 py-3 rounded-xl space-y-3">
-                        <div class=" bg-white py-2 px-2 w-2/6 rounded-xl">
+                        <div class=" bg-white py-2 px-2 w-3/6 md:w-2/6 rounded-xl">
                             <p id="swiftpay">SwiftPay</p>
                         </div>
                         <h1 class="text-xl font-semibold" id="title3">Optimize Home page</h1>
@@ -166,7 +167,7 @@
                     </div>
                     <!-- card-4 -->
                     <div class="bg-[#F4F7FF] px-3 py-3 rounded-xl space-y-3">
-                        <div class=" bg-white py-2 px-2 w-1/5 rounded-xl">
+                        <div class=" bg-white py-2 px-2 w-2/5 md:w-1/5 rounded-xl">
                             <p id="meta">Meta</p>
                         </div>
                         <h1 class="text-xl font-semibold" id="title4">Add new emoji 🤲</h1>
@@ -192,7 +193,7 @@
                     </div>
                     <!-- card-5 -->
                     <div class="bg-[#F4F7FF] px-3 py-3 rounded-xl space-y-3">
-                        <div class=" bg-white py-2 px-2 w-2/5 rounded-xl">
+                        <div class=" bg-white py-2 px-2 w-3/5 md:w-2/5 rounded-xl">
                             <p id="googleLLc">Google LLC</p>
                         </div>
                         <h1 class="text-xl font-semibold" id="title5">Integrate OpenAI API</h1>
@@ -219,7 +220,7 @@
                     </div>
                     <!-- card-6 -->
                     <div class="bg-[#F4F7FF] px-3 py-3 rounded-xl space-y-3">
-                        <div class=" bg-white py-2 px-2 w-2/5 rounded-xl">
+                        <div class=" bg-white py-2 px-2 w-3/5 md:w-2/5 rounded-xl">
                             <p id="glassdoor">Glassdoar</p>
                         </div>
                         <h1 class="text-xl font-semibold" id="title6">Improve Job searching</h1>
@@ -249,7 +250,7 @@
             </div>
 
             <!-- right part -->
-            <div class="bg-white py-3 px-3 rounded-xl w-3/12" id="activity-log">
+            <div class="bg-white py-3 px-3 rounded-xl md:w-3/12" id="activity-log">
 
                 <!-- upper part -->
 
