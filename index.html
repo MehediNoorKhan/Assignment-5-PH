@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevBoard</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/61d8c7e4c7.js" crossorigin="anonymous"></script>
 </head>
 
@@ -58,7 +57,7 @@
                         </div>
                     </div>
                     <!-- second part -->
-                    <div class="bg-gradient-to-r from-indigo-600 to-indigo-200 rounded-xl flex-1 cursor-pointer"
+                    <div class="bg-gradient-to-r from-indigo-600 to-indigo-300 rounded-xl flex-1 cursor-pointer h-20"
                         id="discoverDiv">
                         <div class=" w-9/12 px-4 py-2 flex gap-2 items-center">
                             <div>
@@ -254,14 +253,14 @@
 
                 <!-- upper part -->
 
-                <!-- image -->
-                <div class="flex gap-3 justify-center">
-                    <img src="assets/activity.png" alt="">
+                <!-- image and title -->
+                <div class="flex gap-3 justify-center items-center">
+                    <img class="h-6" src="assets/activity.png" alt="">
                     <p class="font-semibold text-lg">Activity Log</p>
                 </div>
 
                 <!-- Lower part -->
-                <div class="flex justify-center mt-3">
+                <div class="flex justify-center items-center mt-3">
                     <button class="text-white px-2 py-2 bg-blue-600 rounded-xl" id="clear-history">Clear
                         History</button>
 
