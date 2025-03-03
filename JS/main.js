@@ -21,7 +21,7 @@ function updateDateTime() {
     document.getElementById('dateLive').innerHTML = `${month} ${date} ${year}`;
 }
 
-setInterval(updateDateTime, 1000);
+setInterval(updateDateTime, 100);
 
 //Going to 'Blog' page
 document.getElementById('discoverDiv').addEventListener('click',
