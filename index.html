@@ -28,7 +28,7 @@
                     <div>
                         <img class="w-8 h-8" src="assets/checkbox.png" alt="image of checkbox">
                     </div>
-                    <h1 class="text-3xl font-bold">23</h1>
+                    <h1 class="text-3xl font-bold" id="completed-task">23</h1>
                 </div>
                 <!-- second part -->
                 <div class="rounded-full bg-slate-100" id="theme-btn">
@@ -54,11 +54,12 @@
 
                         <div>
                             <p class="text-gray-500">Task assigned</p>
-                            <h3 class="text-xl font-bold">05</h3>
+                            <h3 class="text-xl font-bold" id="assigned-task">6</h3>
                         </div>
                     </div>
                     <!-- second part -->
-                    <div class="bg-gradient-to-r from-indigo-600 to-indigo-200 rounded-xl flex-1">
+                    <div class="bg-gradient-to-r from-indigo-600 to-indigo-200 rounded-xl flex-1 cursor-pointer"
+                        id="discoverDiv">
                         <div class=" w-9/12 px-4 py-2 flex gap-2 items-center">
                             <div>
                                 <img class="h-12 w-12" src="assets/board.png" alt="image of board">
@@ -74,8 +75,8 @@
                         </div>
 
                         <div>
-                            <p><span>Wed</span>,</p>
-                            <h3 class="text-xl font-bold">July 28 2025</h3>
+                            <p><span id="dayLive"></span>,</p>
+                            <h3 class="text-xl font-bold" id="dateLive"></h3>
                         </div>
                     </div>
 
@@ -87,9 +88,9 @@
                     <!-- card-1 -->
                     <div class="bg-[#F4F7FF] px-3 py-3 rounded-xl space-y-3">
                         <div class=" bg-white py-2 px-2 w-2/5 rounded-xl">
-                            <p>ShopEase</p>
+                            <p id="shopease">ShopEase</p>
                         </div>
-                        <h1 class="text-xl font-semibold">Fix Mobile Button Issue </h1>
+                        <h1 class="text-xl font-semibold" id="title1">Fix Mobile Button Issue </h1>
                         <p class="bg-white h-[92px] px-3 pt-5 pb-2 truncate rounded-xl">Debug using Chrome <br>DevTools,
                             check for
                             overlapping elements, and ensure onClick works properly and ensure onClick works properly
@@ -105,7 +106,8 @@
                                 <p class="text-gray-400">Deadline</p>
                                 <h3 class="text-lg font-semibold">21 March 2025</h3>
                             </div>
-                            <button class="text-white px-2 py-2 bg-blue-600 rounded-xl">Completed
+                            <button class="text-white px-2 py-2 bg-blue-600 rounded-xl cursor-pointer"
+                                id="btn1">Completed
                             </button>
 
                         </div>
@@ -114,9 +116,9 @@
                     <!-- card-2 -->
                     <div class="bg-[#F4F7FF] px-3 py-3 rounded-xl space-y-3">
                         <div class=" bg-white py-2 px-2 w-2/5 rounded-xl">
-                            <p>CloudSync</p>
+                            <p id="cloudsync">CloudSync</p>
                         </div>
-                        <h1 class="text-xl font-semibold">Add Dark Mode</h1>
+                        <h1 class="text-xl font-semibold" id="title2">Add Dark Mode</h1>
                         <p class="bg-white h-[92px] px-3 pt-5 pb-2 truncate rounded-xl">Store the user's preference
                             in<br>
                             localStorage, update CSS variables dynamically, and apply a smooth transition effect.
@@ -129,9 +131,9 @@
                             <!-- date -->
                             <div>
                                 <p class="text-gray-400">Deadline</p>
-                                <h3 class="text-lg font-semibold">21 March 2025</h3>
+                                <h3 class="text-lg font-semibold">25 March 2025</h3>
                             </div>
-                            <button class="text-white px-2 py-2 bg-blue-600 rounded-xl">Completed
+                            <button class="text-white px-2 py-2 bg-blue-600 rounded-xl" id="btn2">Completed
                             </button>
 
                         </div>
@@ -140,9 +142,9 @@
                     <!-- card-3 -->
                     <div class="bg-[#F4F7FF] px-3 py-3 rounded-xl space-y-3">
                         <div class=" bg-white py-2 px-2 w-2/6 rounded-xl">
-                            <p>SwiftPay</p>
+                            <p id="swiftpay">SwiftPay</p>
                         </div>
-                        <h1 class="text-xl font-semibold">Optimize Home page</h1>
+                        <h1 class="text-xl font-semibold" id="title3">Optimize Home page</h1>
                         <p class="bg-white h-[92px] px-3 pt-5 pb-2 truncate rounded-xl">Debug using Chrome<br> DevTools,
                             check for overlapping elements, and ensure onClick works properly
                             and ensure onClick works properly
@@ -155,9 +157,9 @@
                             <!-- date -->
                             <div>
                                 <p class="text-gray-400">Deadline</p>
-                                <h3 class="text-lg font-semibold">21 March 2025</h3>
+                                <h3 class="text-lg font-semibold">31 March 2025</h3>
                             </div>
-                            <button class="text-white px-2 py-2 bg-blue-600 rounded-xl">Completed
+                            <button class="text-white px-2 py-2 bg-blue-600 rounded-xl" id="btn3">Completed
                             </button>
 
                         </div>
@@ -166,9 +168,9 @@
                     <!-- card-4 -->
                     <div class="bg-[#F4F7FF] px-3 py-3 rounded-xl space-y-3">
                         <div class=" bg-white py-2 px-2 w-1/5 rounded-xl">
-                            <p>Meta</p>
+                            <p id="meta">Meta</p>
                         </div>
-                        <h1 class="text-xl font-semibold">Add new emoji 🤲</h1>
+                        <h1 class="text-xl font-semibold" id="title4">Add new emoji 🤲</h1>
                         <p class="bg-white h-[92px] px-3 pt-5 pb-2 truncate rounded-xl">Debug using Chrome<br> DevTools,
                             check for overlapping elements, and ensure onClick works properly
                             and ensure onClick works properly
@@ -183,7 +185,7 @@
                                 <p class="text-gray-400">Deadline</p>
                                 <h3 class="text-lg font-semibold">21 March 2025</h3>
                             </div>
-                            <button class="text-white px-2 py-2 bg-blue-600 rounded-xl">Completed
+                            <button class="text-white px-2 py-2 bg-blue-600 rounded-xl" id="btn4">Completed
                             </button>
 
                         </div>
@@ -192,9 +194,9 @@
                     <!-- card-5 -->
                     <div class="bg-[#F4F7FF] px-3 py-3 rounded-xl space-y-3">
                         <div class=" bg-white py-2 px-2 w-2/5 rounded-xl">
-                            <p>Google LLC</p>
+                            <p id="googleLLc">Google LLC</p>
                         </div>
-                        <h1 class="text-xl font-semibold">Integrate OpenAI API</h1>
+                        <h1 class="text-xl font-semibold" id="title5">Integrate OpenAI API</h1>
                         <p class="bg-white h-[92px] px-3 pt-5 pb-2 truncate rounded-xl">Debug using Chrome <br>DevTools,
                             check for
                             overlapping elements, and ensure onClick works properly and ensure onClick works properly
@@ -208,9 +210,9 @@
                             <!-- date -->
                             <div>
                                 <p class="text-gray-400">Deadline</p>
-                                <h3 class="text-lg font-semibold">21 March 2025</h3>
+                                <h3 class="text-lg font-semibold">01 April 2025</h3>
                             </div>
-                            <button class="text-white px-2 py-2 bg-blue-600 rounded-xl">Completed
+                            <button class="text-white px-2 py-2 bg-blue-600 rounded-xl" id="btn5">Completed
                             </button>
 
                         </div>
@@ -219,9 +221,9 @@
                     <!-- card-6 -->
                     <div class="bg-[#F4F7FF] px-3 py-3 rounded-xl space-y-3">
                         <div class=" bg-white py-2 px-2 w-2/5 rounded-xl">
-                            <p>Glassdoar</p>
+                            <p id="glassdoor">Glassdoar</p>
                         </div>
-                        <h1 class="text-xl font-semibold">Improve Job searching</h1>
+                        <h1 class="text-xl font-semibold" id="title6">Improve Job searching</h1>
                         <p class="bg-white h-[92px] px-3 pt-5 pb-2 truncate rounded-xl">Debug using Chrome <br>DevTools,
                             check for
                             overlapping elements, and ensure onClick works properly and ensure onClick works properly
@@ -235,9 +237,9 @@
                             <!-- date -->
                             <div>
                                 <p class="text-gray-400">Deadline</p>
-                                <h3 class="text-lg font-semibold">21 March 2025</h3>
+                                <h3 class="text-lg font-semibold">05 May 2025</h3>
                             </div>
-                            <button class="text-white px-2 py-2 bg-blue-600 rounded-xl">Completed
+                            <button class="text-white px-2 py-2 bg-blue-600 rounded-xl" id="btn6">Completed
                             </button>
 
                         </div>
@@ -248,7 +250,7 @@
             </div>
 
             <!-- right part -->
-            <div class="bg-white py-3 px-3 rounded-xl w-3/12">
+            <div class="bg-white py-3 px-3 rounded-xl w-3/12" id="activity-log">
 
                 <!-- upper part -->
 
@@ -275,6 +277,7 @@
 
 
     <script src="main.js"></script>
+    <script src="functions.js"></script>
 </body>
 
 </html>
