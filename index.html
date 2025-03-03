@@ -8,10 +8,36 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/61d8c7e4c7.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="bg-[#F4F7FF] pb-16">
+    <header class="max-w-7xl mx-auto py-3">
+        <!-- navbar section -->
+        <nav class="bg-white flex justify-between items-center px-4 py-2 rounded-2xl">
+            <!-- left part -->
+            <div class="flex gap-2 items-center justify-center">
+                <img class="w-8" src="assets/logo.png" alt="image of the logo">
+                <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1>
+            </div>
 
+            <!-- right part -->
+
+            <div class="flex gap-4">
+                <!-- first part -->
+                <div class="bg-[#F4F7FF] rounded-full py-3 px-3 flex gap-4 justify-center items-center">
+                    <div>
+                        <img class="w-8 h-8" src="assets/checkbox.png" alt="image of checkbox">
+                    </div>
+                    <h1 class="text-3xl font-bold">23</h1>
+                </div>
+                <!-- second part -->
+                <div class="rounded-full bg-slate-100">
+                    <img class="px-2 py-2" src="assets/theme-btn.png" alt="image of the button for theme">
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <script src="main.js"></script>
 </body>
