@@ -31,34 +31,38 @@
     <h3 class="text-xl font-bold text-center">Blogs</h3>
 
     <!-- q1 card -->
-    <div class="bg-white rounded-lg max-w-7xl mx-auto mt-4">
+    <div class="bg-white rounded-lg max-w-7xl mx-auto mt-4 p-4">
         <!-- question part -->
-        <div class="px-3 py-3">
-            <h4 class="font-bold text-lg">Question-1: What are the different ways to select an element in the DOM?</h4>
+        <div class="px-3 py-3 md:w-9/12">
+            <h4 class="font-bold text-lg sm:text-xl">
+                Question-1: What are the different ways to select an element in the DOM?
+            </h4>
         </div>
         <!-- dashed line -->
         <div class="border-b-2 border-dashed"></div>
         <!-- answer part -->
-        <div class="px-3 py-3">
-            <p class="w-9/12">The ways to select an element in the DOM are
-                getElementById,getElementsByClassName,getElementsByTagName,querySelector,
-                querySelectorAll
+        <div class="px-3 py-3 md:w-9/12">
+            <p class="sm:text-lg break-words font-normal">
+                The ways to select an element in the DOM are:
+                <br class="mt-2">
+                getElementById, getElementsByClassName, getElementsByTagName, querySelector, querySelectorAll
             </p>
         </div>
-
     </div>
+
     <!-- q2 card -->
     <div class="bg-white rounded-lg max-w-7xl mx-auto mt-2 mb-2">
         <!-- question part -->
-        <div class="px-3 py-3">
-            <h4 class="font-bold text-lg">Question-2: What is the difference between innerHTML, innerText, and
+        <div class="px-3 py-3 md:w-9/12">
+            <h4 class="font-bold text-lg break-words">Question-2: What is the difference between innerHTML, innerText,
+                and
                 textContent?</h4>
         </div>
         <!-- dashed line -->
         <div class="border-b-2 border-dashed"></div>
         <!-- answer part -->
-        <div class="px-3 py-3">
-            <p class="w-9/12">innerHTML gets or sets the HTML content inside an element, innerText
+        <div class="px-3 py-3 md:w-9/12">
+            <p class="break-words">innerHTML gets or sets the HTML content inside an element, innerText
                 gets or sets the visible text and textContent gets or
                 sets all text inside an element (including hidden text)
             </p>
@@ -68,14 +72,15 @@
     <!-- q3 card -->
     <div class="bg-white rounded-lg max-w-7xl mx-auto mt-2 mb-2">
         <!-- question part -->
-        <div class="px-3 py-3">
-            <h4 class="font-bold text-lg">Question-3: What is event delegation in the DOM?</h4>
+        <div class="px-3 py-3 md:w-9/12">
+            <h4 class="font-bold text-lg break-words">Question-3: What is event delegation in the DOM?</h4>
         </div>
         <!-- dashed line -->
         <div class="border-b-2 border-dashed"></div>
         <!-- answer part -->
-        <div class="px-3 py-3">
-            <p class="w-9/12">Event delegation is a technique in the DOM where a single parent element handles events
+        <div class="px-3 py-3 md:w-9/12">
+            <p class="break-words">Event delegation is a technique in the DOM where a single parent element handles
+                events
                 for its child elements, using event bubbling to capture events that originate from descendants.
             </p>
         </div>
@@ -84,14 +89,14 @@
     <!-- q4 card -->
     <div class="bg-white rounded-lg max-w-7xl mx-auto mt-2 mb-2">
         <!-- question part -->
-        <div class="px-3 py-3">
-            <h4 class="font-bold text-lg">Question-4: What is event bubbling in the DOM?</h4>
+        <div class="px-3 py-3 md:w-9/12">
+            <h4 class="font-bold text-lg break-words">Question-4: What is event bubbling in the DOM?</h4>
         </div>
         <!-- dashed line -->
         <div class="border-b-2 border-dashed"></div>
         <!-- answer part -->
-        <div class="px-3 py-3">
-            <p class="w-9/12">Event bubbling is when an event starts on the element clicked, and then it
+        <div class="px-3 py-3 md:w-9/12">
+            <p class="break-words">Event bubbling is when an event starts on the element clicked, and then it
                 bubbles upward to all its parent elements.
             </p>
         </div>
@@ -100,23 +105,24 @@
     <!-- q5 card -->
     <div class="bg-white rounded-lg max-w-7xl mx-auto mt-2 mb-2">
         <!-- question part -->
-        <div class="px-3 py-3">
-            <h4 class="font-bold text-lg">Question-5: How do you create, add, and remove elements using JavaScript?</h4>
+        <div class="px-3 py-3 md:w-9/12">
+            <h4 class="font-bold text-lg break-words">Question-5: How do you create, add, and remove elements using
+                JavaScript?</h4>
         </div>
         <!-- dashed line -->
         <div class="border-b-2 border-dashed"></div>
         <!-- answer part -->
-        <div class="px-3 py-3">
-            <div class="w-9/12">
-                <p class="font-semibold">Creating an element:</p>
+        <div class="px-3 py-3 md:w-9/12">
+            <div>
+                <p class="font-semibold break-words">Creating an element:</p>
                 const newElement = document.createElement('p');<br>
-                newElement.textContent = 'DevBoard!';
+                <span class="break-words">newElement.textContent = 'DevBoard!';</span>
                 <br class="mb-2">
-                <p class="font-semibold">Adding an element:</p>
-                document.body.appendChild(newElement);
+                <p class="font-semibold break-words">Adding an element:</p>
+                <span class="break-words">document.body.appendChild(newElement);</span>
                 <br class="mb-2">
-                <p class="font-semibold">Removing an element:</p>
-                document.body.removeChild(newElement);
+                <p class="font-semibold break-words">Removing an element:</p>
+                <span class="break-words">document.body.removeChild(newElement);</span>
             </div>
         </div>
 
