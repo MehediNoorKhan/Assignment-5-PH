@@ -30,7 +30,7 @@ document.getElementById('discoverDiv').addEventListener('click',
     }
 );
 
-//Button Disable
+//Button Disable, Alert and Notification in Activity-Log
 const button1 = document.getElementById("btn1");
 button1.addEventListener('click', function (event) {
     buttonDisable("btn1", true, "title1");
@@ -54,5 +54,14 @@ button5.addEventListener('click', function (event) {
 const button6 = document.getElementById("btn6");
 button6.addEventListener('click', function (event) {
     buttonDisable("btn6", true, "title6");
-})
+});
+
+// Clear Activity-Log
+document.getElementById('clear-history').addEventListener('click',
+    function () {
+        const notifications = document.querySelectorAll('.notification');
+        notifications.forEach(notific => notific.remove());
+    }
+);
+
 
